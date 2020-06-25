@@ -1,0 +1,28 @@
+.wp-block-button__link,
+.button,
+.contact-form-block input[type='submit'] {
+	border: none;
+	border-radius: .25em;
+	box-shadow: none;
+	color: var(--color-white);
+	background-color: var(--color-primary);
+	cursor: pointer;
+	display: inline-block;
+	font-size: 1rem;
+	margin: 0;
+	padding: .5rem 1rem;
+	text-align: center;
+	text-decoration: none;
+	overflow-wrap: break-word;
+	font-family: var(--font-heading-alt);
+	text-transform: uppercase;
+	font-weight: normal;
+	letter-spacing: .05em;
+	transition: background 200ms;
+	&:hover {
+		background-color: hsl(182.9, 41.1, 41.4);
+	}
+}
+.wp-block-button.is-style-full-width-button > a {
+	width: 100%;
+}

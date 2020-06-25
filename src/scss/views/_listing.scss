@@ -1,0 +1,20 @@
+.natm_listing {
+  .post-thumbnail {
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+.natm_listing.category-sponsor {
+    .post-thumbnail {
+        background-color: var(--color-light-gray);
+        padding-top: var(--flow-space);
+        padding-bottom: var(--flow-space);
+        img {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+    }
+}

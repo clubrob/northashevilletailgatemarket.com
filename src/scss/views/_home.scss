@@ -1,0 +1,14 @@
+.home {
+    .wp-block-cover {
+        .inline-icon {
+            font-weight: 300;
+            a {
+                color: var(--color-white);
+                &:hover {
+                    text-decoration: none;
+                    text-decoration-thickness: 1px;
+                }
+            }
+        }
+    }
+}

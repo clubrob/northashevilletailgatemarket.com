@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap');
+
+@font-face {
+    font-family: 'bodoni';
+    src: url('./assets/fonts/bodoniflf-regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'bodoni';
+    src: url('./assets/fonts/bodoniflf-bold-webfont.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'bodoni';
+    src: url('./assets/fonts/bodoniflf-bolditalic-webfont.woff2') format('woff2');
+    font-weight: bold;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'bodoni';
+    src: url('./assets/fonts/bodoniflf-italic-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: italic;
+}
+
+:root {
+	/* Colors */
+	--color-primary: #4b3d2a;
+	--color-secondary: #80897a;
+	--color-tertiary: #609ca2;
+	--color-light: #fdfded;
+	--color-dark: #666;
+	--color-light-gray: #ddd;
+	--color-gray: #aaa;
+	--color-white: #fff;
+	--color-black: #000;
+	/* Typography */
+	--font-body: 'Lato', Verdana, sans-serif;
+	--font-heading: 'Lato', Verdana, sans-serif;
+	--font-heading-alt: 'bodoni', Times, 'Times New Roman', serif;
+	/* Sizes */
+	--size-300: 0.75rem;
+	--size-400: 1rem;
+	--size-500: 1.333rem;
+	--size-600: 1.777rem;
+	--size-700: 2.369rem;
+	--size-800: 3.157rem;
+	--size-900: 4.209rem;
+	/* Alignment */
+	--flow-space: 1em;
+}
