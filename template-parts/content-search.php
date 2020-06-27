@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Template part for displaying results in search pages
  *
@@ -11,25 +12,27 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
-
-		<?php if ( 'post' === get_post_type() ) : ?>
-		<div class="entry-meta">
-			<?php
-			natm_v1_posted_on();
-			natm_v1_posted_by();
-			?>
-		</div><!-- .entry-meta -->
-		<?php endif; ?>
+		<?php
+		the_title(sprintf('<h4 class="entry-title"><a href="%s" rel="bookmark">', esc_url(get_permalink())), '</a></h4>');
+		?>
 	</header><!-- .entry-header -->
 
-	<?php natm_v1_post_thumbnail(); ?>
+	<div class="entry-content">
+		<div class="entry-image">
+			<?php natm_v1_post_thumbnail(); ?>
+		</div>
+		<div class="entry-summary">
+			<?php
+			$post_type = get_post_type();
 
-	<div class="entry-summary">
-		<?php the_excerpt(); ?>
+			if ($post_type === 'natm_listing') {
+				$business_description = get_field('business_description');
+				$trimmed = wp_trim_words($business_description, 30);
+				printf('<p>%s</p>', $trimmed);
+			} else {
+				the_excerpt();
+			}
+			?>
+		</div>
 	</div><!-- .entry-summary -->
-
-	<footer class="entry-footer">
-		<?php natm_v1_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->

@@ -1,4 +1,4 @@
-.custom-pagination {
+.pagination {
 	display: flex;
 	justify-content: space-around;
 	align-items: flex-end;
@@ -11,32 +11,37 @@
 		display: block;
 		padding: 0 .2rem;
 	}
-	> a, > span {
+	a, span {
 		font-family: var(--font-heading);
 		font-weight: 700;
 		text-decoration: none;
 		text-transform: uppercase;
 	}
-	> a {
+	a {
 		color: var(--color-primary);
 	}
-	> span {
+	span {
 		color: var(--color-gray);
 	}
 }
 @media (min-width: 64rem) {
-	.custom-pagination {
-		> * {
+	.pagination {
+		* {
 			padding: .5rem 1.5rem;
 		}
-		> a, > span {
-			border-radius: 0;
+		a, span {
+			border-radius: .25em;
 		}
-		> a {
-			border: 1px solid var(--color-dark);
-			color: var(--color-dark);
+		a {
+			background-color: var(--color-primary);
+			transition: background 200ms;
+			color: var(--color-white);
+			&:hover {
+				background-color: var(--color-tertiary);
+				color: var(--color-white);
+			}
 		}
-		> span {
+		span {
 			background-color: var(--color-light-gray);
 			color: var(--color-dark);
 		}

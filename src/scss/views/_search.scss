@@ -1,0 +1,26 @@
+.search {
+    .site-wrap {
+        padding-bottom: var(--size-900);
+    }
+    article {
+        padding: var(--size-700);
+        border-radius: .25em;
+    }
+    article:nth-child(even) {
+        background-color: var(--color-light-gray);
+    }
+    .entry-content {
+        display: flex;
+        padding-top: var(--flow-space);
+        padding-bottom: var(--flow-space);
+        .entry-summary {
+            padding-left: var(--flow-space);
+        }
+        .entry-image {
+            img {
+                width: 20rem;
+                max-width: unset;
+            }
+        }
+    }
+}
