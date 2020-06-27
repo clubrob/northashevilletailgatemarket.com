@@ -15,7 +15,7 @@ body.no-sidebar {
 .entry-header {
 	display: block;
 }
-.has-cover {
+.page.has-cover {
 	.site-content {
 		padding-top: 0;
 	}
@@ -95,18 +95,20 @@ body.no-sidebar {
 				width: 25%;
 				h5 {
 					width: 100%;
-					text-align: center;
+					text-align: right;
 					font-size: var(--size-500);
 					font-weight: 700;
 					margin-bottom: 1em;
+					text-transform: uppercase;
+					letter-spacing: .05em;
 				}
 				ul {
 					display: flex;
-					justify-content: space-around;
+					justify-content: space-between;
 					list-style: none;
-					margin: 0 auto;
+					margin: 0 0 auto;
 					padding: 0;
-					width: 80%;
+					width: 70%;
 					li {
 						display: block;
 						img {
