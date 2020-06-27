@@ -21,6 +21,7 @@
 	transition: background 200ms;
 	&:hover {
 		background-color: hsl(182.9, 41.1, 41.4);
+		color: var(--color-white);
 	}
 }
 .wp-block-button.is-style-full-width-button > a {
