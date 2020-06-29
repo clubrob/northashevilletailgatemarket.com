@@ -20,13 +20,14 @@ input[type='submit'],
 }
 .no-results {
 	input[type='text'] {
-		background: #C0B6AC;
+		background: var(--color-primary-light);
 		color: var(--color-white);
-		outline-color: #8b847c;
+		outline-color: var(--color-primary-400);
 	}
 }
 
-.contact-form {
+.contact-form,
+#mc-embedded-subscribe-form {
 	.grunion-field-wrap {
 		margin: 0;
 	}
@@ -34,10 +35,13 @@ input[type='submit'],
 	input[type='email'],
 	input[type='tel'],
 	textarea {
-		background: #C0B6AC;
+		background: var(--color-primary-300);
 		color: var(--color-white);
-		outline-color: #8b847c;
+		outline-color: var(--color-primary-400);
 		margin: 0;
+		&::placeholder {
+			color: var(--color-white);
+		}
 	}
 	.wp-block-jetpack-button {
 		text-align: center;

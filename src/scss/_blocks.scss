@@ -242,34 +242,39 @@
 		padding: 0.5em 1em;
 	}
 }
+.wp-block-cover {
+	min-height: 520px !important;
+}
+@media (min-width: 64rem) {
+	.wp-block-cover {
+		min-height: 820px !important;
+	}
+
+}
 
 /* WP Columns override */
 
 .wp-block-columns {
-	flex-wrap: wrap;
+	//flex-wrap: wrap;
 }
 .wp-block-column {
-	margin-top: 0;
-	flex-basis: 100% !important;
+	//margin-top: 0;
+	//flex-basis: 100% !important;
 }
 .wp-block-column:nth-child(2n) {
-	margin-left: 0;
+	// margin-left: 0;
 }
 @media (min-width: 48rem) {
-	.wp-block-columns {
-		flex-wrap: nowrap;
-	}
-	.wp-block-column:nth-child(2n) {
-		margin-left: 2rem;
-	}
+	// .wp-block-columns {
+	// 	flex-wrap: nowrap;
+	// }
+	// .wp-block-column:nth-child(2n) {
+	// 	margin-left: 2rem;
+	// }
 }
 
 /* Listings Grid Block */
-
 .natm-business-listing--grid {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	gap: 3rem;
 	.natm-business-listing--grid-item {
 		.listing-thumbnail {
 			position: relative;
@@ -292,7 +297,25 @@
 			font-size: var(--size-400);
 		}
 		&:not(:first-child) {
-			margin-top: 0;
+			//margin-top: 0;
+		}
+	}
+}
+@media (min-width: 64rem) {
+	.natm-business-listing--grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		gap: 3rem;
+		.natm-business-listing--grid-item {
+			.listing-headline {
+				font-size: var(--size-500);
+			}
+			p {
+				font-size: var(--size-400);
+			}
+			&:not(:first-child) {
+				margin-top: 0;
+			}
 		}
 	}
 }

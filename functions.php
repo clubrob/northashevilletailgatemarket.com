@@ -306,6 +306,24 @@ add_image_size('full_width_hero', 1600, 1600);
 
 add_filter( 'image_size_names_choose', 'my_custom_sizes' );
 
+add_filter('wp_nav_menu_items','add_search_box_to_menu', 10, 2);
+function add_search_box_to_menu( $items, $args ) {
+	$theme_dir = get_template_directory_uri();
+    if( $args->theme_location == 'menu-1' )
+        return $items.'<div class="nav-social">
+		<h5>
+			Connect with us
+		</h5>
+		<ul>
+			<li><a href="https://www.instagram.com/northashevilletailgatemarket/"><img src="'. $theme_dir . '/assets/images/icons/instagram-icon.svg" alt="Instagram"></a></li>
+			<li><a href="https://www.facebook.com/North-Asheville-Tailgate-Market-365664308791/"><img src="'. $theme_dir . '/assets/images/icons/facebook-icon.svg" alt="Facebook"></a></li>
+			<li><a href="<?php echo get_site_url() ?>/contact"><img src="'. $theme_dir . '/assets/images/icons/email-icon.svg" alt="Email"></a></li>
+		</ul>
+	</div>';
+
+    return $items;
+}
+
 function my_custom_sizes( $sizes ) {
 	return array_merge( $sizes, array(
 		'full_width_hero' => __( 'Full Width Hero' ),

@@ -1,5 +1,8 @@
 .home {
     .wp-block-cover {
+        p {
+            font-size: var(--size-600) !important;
+        }
         .inline-icon {
             font-weight: 300;
             a {
@@ -8,6 +11,16 @@
                     text-decoration: none;
                     text-decoration-thickness: 1px;
                 }
+            }
+        }
+    }
+}
+
+@media (min-width: 64rem) {
+    .home {
+        .wp-block-cover {
+            p {
+                font-size: var(--size-700) !important;
             }
         }
     }

@@ -48,16 +48,8 @@
 
 			<nav id="site-navigation" class="main-navigation">
 				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
-					<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<g clip-path="url(#clip0)">
-						<path d="M-21.3334 149.333H277.333V106.667H-21.3334V149.333ZM-21.3334 256H277.333V213.333H-21.3334V256ZM-21.3334 0V42.6667H277.333V0H-21.3334Z" fill="#565e66"/>
-						</g>
-						<defs>
-							<clipPath id="clip0">
-								<rect width="256" height="256" fill="white"/>
-							</clipPath>
-						</defs>
-					</svg>
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="open-icon"><rect x="0" fill="none" width="20" height="20"/><g><path d="M3 15h14v-2H3v2zM3 5v2h14V5H3zm0 6h14V9H3v2z"/></g></svg>
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="close-icon"><rect x="0" fill="none" width="20" height="20"/><g><path d="M12.12 10l3.53 3.53-2.12 2.12L10 12.12l-3.54 3.54-2.12-2.12L7.88 10 4.34 6.46l2.12-2.12L10 7.88l3.54-3.53 2.12 2.12z"/></g></svg>
 				</button>
 				<?php
 				wp_nav_menu( array(
