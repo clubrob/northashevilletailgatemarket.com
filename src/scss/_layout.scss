@@ -1,8 +1,11 @@
 body {
 	padding-top: 9rem;
 }
-@media (min-width: 36rem) {
+@media (min-width: 64rem) {
 	body {
+		padding-top: 15rem;
+	}
+	body.has-cover {
 		padding-top: 3rem;
 	}
 }
@@ -46,6 +49,12 @@ body.no-sidebar {
 	* {
 		color: var(--color-white);
 	}
+	a {
+		color: var(--color-white);
+		&:hover {
+			color: var(--color-white);
+		}
+	}
 	.footer-wrap {
 		padding-top: var(--size-700);
 		padding-bottom: var(--size-700);
@@ -67,9 +76,6 @@ body.no-sidebar {
 					font-size: var(--size-600);
 					padding: .25rem 0;
 					text-align: center;
-					&:hover {
-						color: var(--color-white);
-					}
 				}
 			}
 			.footer-social {
@@ -95,6 +101,7 @@ body.no-sidebar {
 					margin: 0 0 auto;
 					padding: 0;
 					width: 70%;
+					max-width: 15.625rem;
 					li {
 						display: block;
 						img {
@@ -120,6 +127,9 @@ body.no-sidebar {
 				margin-bottom: var(--size-500);
 			}
 		}
+		.footer-vendor {
+			text-align: center;
+		}
 	}
 
 }
@@ -139,7 +149,7 @@ body.no-sidebar {
 		font-family: var(--font-heading);
 		text-transform: uppercase;
 		margin: 0 auto;
-		padding: .5rem;
+		padding: .75rem .5rem;
 		&:after {
 			content: url(./assets/images/icons/arrow-up.svg);
 			display: inline-block;

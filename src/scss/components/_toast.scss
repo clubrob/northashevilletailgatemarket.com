@@ -9,7 +9,7 @@
     opacity: 0;
     padding: 0;
     p {
-        font-size: var(--size-600);
+        font-size: var(--size-500);
         font-weight: 300;
         color: var(--color-white);
         a {
@@ -17,7 +17,7 @@
             margin: 0 auto;
             color: var(--color-white);
             text-decoration: none;
-            padding: var(--size-900);
+            padding: var(--size-700);
         }
     }
     .wp-block-buttons {
@@ -41,4 +41,14 @@
     opacity: 1;
     transform: translateY(0);
     transition: transform 400ms, opacity 400ms;
+}
+@media (min-width: 48rem) {
+    .toast-modal {
+        p {
+            font-size: var(--size-600);
+            a {
+                padding: var(--size-900);
+            }
+        }
+    }
 }

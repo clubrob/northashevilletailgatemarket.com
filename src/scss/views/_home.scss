@@ -14,13 +14,40 @@
             }
         }
     }
+    .home-market-values {
+        .is-style-caption-overlay-square {
+            figcaption {
+                font-size: var(--size-800);
+            }
+        }
+    }
 }
+
+@media (min-width: 48rem) {
+    .home {
+        .home-market-values {
+            .is-style-caption-overlay-square {
+                figcaption {
+                    font-size: var(--size-700);
+                }
+            }
+        }
+    }
+}
+
 
 @media (min-width: 64rem) {
     .home {
         .wp-block-cover {
             p {
                 font-size: var(--size-700) !important;
+            }
+        }
+        .home-market-values {
+            .is-style-caption-overlay-square {
+                figcaption {
+                    font-size: var(--size-600);
+                }
             }
         }
     }

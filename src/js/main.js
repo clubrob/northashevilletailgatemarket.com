@@ -22,43 +22,43 @@ document.addEventListener("DOMContentLoaded", function() {
 
 	/* Add nav class on scroll */
 
-	// const scrollHandler = (event) => {
-	// 	const scrollPosition = window.scrollY;
+	const scrollHandler = (event) => {
+		const scrollPosition = window.scrollY;
 
-	// 	if (scrollPosition > 50 && document.documentElement.clientWidth > 768) {
-	// 		document.body.classList.add('scrolled');
-	// 		return;
-	// 	}
-	// 	document.body.classList.remove('scrolled');
-	// }
-	// window.addEventListener('scroll', _.throttle(scrollHandler, 100));
+		if (scrollPosition > 50 && document.documentElement.clientWidth > 768) {
+			document.body.classList.add('scrolled');
+			return;
+		}
+		document.body.classList.remove('scrolled');
+	}
+	window.addEventListener('scroll', _.throttle(scrollHandler, 100));
 
 	/* Newsletter Toast Modal */
-	// if(document.querySelector('.toast-modal')) {
-	// 	const toastModal = document.querySelector('.toast-modal');
-	// 	const closeModal = document.querySelector('.close-modal a');
+	if(document.querySelector('.toast-modal')) {
+		const toastModal = document.querySelector('.toast-modal');
+		const closeModal = document.querySelector('.close-modal a');
 
-	// 	setTimeout(function() { toastModal.classList.add('show'); }, 3500);
+		setTimeout(function() { toastModal.classList.add('show'); }, 3500);
 
-	// 	const closeModalAction = () => { toastModal.classList.remove('show'); }
+		const closeModalAction = () => { toastModal.classList.remove('show'); }
 
-	// 	closeModal.addEventListener('click', (e) => {
-	// 		e.preventDefault();
-	// 		closeModalAction();
-	// 	});
+		closeModal.addEventListener('click', (e) => {
+			e.preventDefault();
+			closeModalAction();
+		});
 
-	// 	document.addEventListener('keyup', (e) => {
-	// 		if (e.key === 'Escape') {
-	// 			closeModalAction();
-	// 		}
-	// 	});
+		document.addEventListener('keyup', (e) => {
+			if (e.key === 'Escape') {
+				closeModalAction();
+			}
+		});
 
-	// 	document.addEventListener('click', (e) => {
-	// 		if (e.target !== toastModal) {
-	// 			closeModalAction();
-	// 		}
-	// 	});
-	// }
+		document.addEventListener('click', (e) => {
+			if (e.target !== toastModal) {
+				closeModalAction();
+			}
+		});
+	}
 });
 
 

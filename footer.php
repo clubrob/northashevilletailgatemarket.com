@@ -47,7 +47,7 @@
 					</p>
 				</div>
 				<div class="footer-vendor">
-					Vendor Access
+					<a href="<?php echo get_site_url() ?>/wp-admin">Vendor Login</a>
 				</div>
 			</div>
 		</div>
