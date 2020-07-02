@@ -1,5 +1,6 @@
 .home {
     .wp-block-cover {
+        transition: background 1000ms;
         p {
             font-size: var(--size-600) !important;
         }
