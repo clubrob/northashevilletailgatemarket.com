@@ -1,0 +1,9 @@
+#parking-info {
+  scroll-margin-top: 9.5rem;
+}
+
+@media (min-width: 64rem) {
+  #parking-info {
+    scroll-margin-top: 7rem;
+  }
+}

@@ -4,6 +4,10 @@ document.addEventListener("DOMContentLoaded", function() {
   menuToggle.addEventListener("click", (e) => {
     document.body.classList.toggle("nav-open");
   });
+  const anchorNavLink = document.querySelector("#primary-menu li:nth-child(9)");
+  anchorNavLink.addEventListener("click", (e) => {
+    window.location.reload();
+  });
 
   /* Scroll to Top Functionality */
   const scrollToTop = () => {
@@ -66,7 +70,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   /* Rotate Homepage Hero */
   if (document.querySelector("body.home")) {
-    const baseUrl = "http://lls.rld.cloud";
+    const baseUrl = "http://localhost:8080";
     const imagesArray = [
       "/wp-content/uploads/2020/06/IMG_3478-scaled-e1593114946703.jpg",
       "/wp-content/uploads/2020/07/Gallery1-scaled-e1593700993558.jpg",
@@ -101,15 +105,15 @@ document.addEventListener("DOMContentLoaded", function() {
     //   }
     // }
     // backgroundSequence();
-	let bgCount = 1;
-	setInterval(() => {
-	  if (bgCount < imagesArray.length) {
-		coverElement.style.backgroundImage = `url("${baseUrl}${imagesArray[bgCount]}")`;
-		bgCount++;
-		return;
-	  }
-	  coverElement.style.backgroundImage = `url("${baseUrl}${imagesArray[0]}")`;
-	  bgCount = 1;
-	}, 4000);
+	// let bgCount = 1;
+	// setInterval(() => {
+	//   if (bgCount < imagesArray.length) {
+	// 	coverElement.style.backgroundImage = `url("${baseUrl}${imagesArray[bgCount]}")`;
+	// 	bgCount++;
+	// 	return;
+	//   }
+	//   coverElement.style.backgroundImage = `url("${baseUrl}${imagesArray[0]}")`;
+	//   bgCount = 1;
+	// }, 4000);
   }
 });
