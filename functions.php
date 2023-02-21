@@ -90,37 +90,37 @@ if (!function_exists('natm_v1_setup')):
 			array(
 				'name' => __( 'primary', 'natm-v1' ),
 				'slug' => 'primary',
-				'color' => '#55C7B5',
+				'color' => '#98a780',
 			),
 			array(
 				'name' => __( 'secondary', 'natm-v1' ),
 				'slug' => 'secondary',
-				'color' => '#AD8AB5',
+				'color' => '#a181a2',
 			),
 			array(
 				'name' => __( 'tertiary', 'natm-v1' ),
 				'slug' => 'tertiary',
-				'color' => '#f4b223',
+				'color' => '#ed9820',
 			),
 			array(
 				'name' => __( 'light', 'natm-v1' ),
 				'slug' => 'light',
-				'color' => '#E7E4C9',
+				'color' => '#e8e4c9',
 			),
 			array(
 				'name' => __( 'dark', 'natm-v1' ),
 				'slug' => 'dark',
-				'color' => '#5A6067',
+				'color' => '#596067',
 			),
 			array(
 				'name' => __( 'light gray', 'natm-v1' ),
 				'slug' => 'light-gray',
-				'color' => '#D9D9D6',
+				'color' => '#c6c5c5',
 			),
 			array(
 				'name' => __( 'gray', 'natm-v1' ),
 				'slug' => 'gray',
-				'color' => '#7D9C91',
+				'color' => '#7d8281',
 			),
 			array(
 				'name' => __( 'white', 'natm-v1' ),

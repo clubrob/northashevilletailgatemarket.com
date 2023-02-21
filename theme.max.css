@@ -79,16 +79,16 @@ select {
 }
 :root {
   /* Colors */
-  --color-primary: #55C7B5;
-  --color-secondary: #AD8AB5;
-  --color-tertiary: #f4b223;
-  --color-primary-300: #EAE0D2;
-  --color-primary-400: #5E6738;
-  --color-tertiary-500: #E5A261;
-  --color-light: #E7E4C9;
-  --color-dark: #5A6067;
-  --color-light-gray: #D9D9D6;
-  --color-gray: #7D9C91;
+  --color-primary: #98a780;
+  --color-secondary: #a181a2;
+  --color-tertiary: #ed9820;
+  --color-primary-300: #cabcad;
+  --color-primary-400: #5e6738;
+  --color-tertiary-500: #f28b4b;
+  --color-light: #e8e4c9;
+  --color-dark: #596067;
+  --color-light-gray: #c6c5c5;
+  --color-gray: #7d8281;
   --color-white: #fff;
   --color-black: #000;
   /* Typography */
@@ -698,7 +698,7 @@ body.no-sidebar {
 }
 
 .site-footer {
-  background-color: var(--color-gray);
+  background-color: var(--color-dark);
   margin-top: var(--size-700);
 }
 .site-footer * {
@@ -943,7 +943,7 @@ body.nav-open {
   width: 100%;
   height: 4rem;
   line-height: 1.2;
-  background: var(--color-primary);
+  background: var(--color-secondary);
   color: var(--color-white);
   padding: 0 var(--flow-space);
 }
@@ -968,7 +968,7 @@ body.nav-open {
   justify-content: space-between;
   align-items: center;
   height: 5rem;
-  background-color: var(--color-light);
+  background-color: var(--color-white);
   padding-left: var(--flow-space);
   padding-right: var(--flow-space);
 }
@@ -999,7 +999,7 @@ body.nav-open {
   height: auto;
 }
 .menu-toggle[aria-expanded=false] .open-icon path {
-  fill: var(--color-white);
+  fill: var(--color-dark);
 }
 .menu-toggle[aria-expanded=false] .close-icon {
   display: none;
@@ -1013,7 +1013,7 @@ body.nav-open {
   height: auto;
 }
 .menu-toggle[aria-expanded=true] .close-icon path {
-  fill: var(--color-white);
+  fill: var(--color-dark);
 }
 
 .menu-toggle[aria-expanded=false] + .menu-main-menu-container {
@@ -1049,10 +1049,10 @@ body.nav-open {
 .menu-main-menu-container .nav-menu .menu-item a {
   display: block;
   width: 100%;
-  background: var(--color-primary-300);
+  background: var(--color-light);
   font-family: var(--font-heading);
   font-size: var(--size-500);
-  color: var(--color-primary);
+  color: var(--color-dark);
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
@@ -1133,10 +1133,16 @@ body.nav-open {
     padding-left: 0;
     padding-right: 0;
     background-color: var(--color-light);
+    color: var(--color-dark);
   }
   .has-cover .nav-wrapper {
     transition: background 500ms;
     background-color: rgba(231, 228, 201, 0.2);
+    color: var(--color-white);
+  }
+  .has-cover .menu-main-menu-container .nav-menu[aria-expanded=false] .menu-item a,
+  .has-cover .menu-main-menu-container .nav-menu[aria-expanded=true] .menu-item a {
+    color: var(--color-white);
   }
   .has-cover.scrolled .nav-wrapper {
     transition: background 500ms;
@@ -1186,13 +1192,13 @@ body.nav-open {
     transition: all 200ms;
     width: 100%;
     padding: 0;
-    color: var(--color-white);
+    color: var(--color-dark);
     text-align: center;
     text-decoration: none;
   }
   .menu-main-menu-container .nav-menu[aria-expanded=false] .menu-item a:hover,
   .menu-main-menu-container .nav-menu[aria-expanded=true] .menu-item a:hover {
-    color: var(--color-white);
+    color: var(--color-light-gray);
     background-color: transparent;
   }
   .menu-main-menu-container .nav-menu[aria-expanded=false] .menu-item:first-child,
@@ -1231,6 +1237,7 @@ body.nav-open {
   .menu-main-menu-container .nav-menu[aria-expanded=false] .menu-item:nth-child(9) a,
   .menu-main-menu-container .nav-menu[aria-expanded=true] .menu-item:nth-child(9) a {
     padding: 0.5rem 1rem;
+    color: var(--color-white);
     background: var(--color-primary);
     font-size: var(--size-400);
     line-height: 1.2;
@@ -1434,7 +1441,7 @@ input[type=submit],
   position: fixed;
   bottom: 0;
   left: 0;
-  background-color: rgba(85, 199, 181, 0.9);
+  background-color: rgba(237, 152, 32, 0.9);
   z-index: 998;
   transform: translateY(100%);
   transition: transform 400ms, opacity 400ms;
@@ -1512,7 +1519,7 @@ input[type=submit],
 }
 @media (min-width: 64rem) {
   .home .wp-block-cover p {
-    font-size: var(--size-700) !important;
+    font-size: var(--size-600) !important;
   }
   .home .home-market-values .is-style-caption-overlay-square figcaption {
     font-size: var(--size-600);
@@ -1597,6 +1604,9 @@ input[type=submit],
   font-size: var(--size-500);
   word-break: break-all;
 }
+.post-479 .contact-form label {
+  font-weight: 400;
+}
 
 @media (min-width: 64rem) {
   .post-479 .contact-icons {
@@ -1619,7 +1629,7 @@ html {
 
 body {
   font-size: 1.1rem;
-  color: var(--color-primary);
+  color: var(--color-dark);
   font-family: var(--font-body);
   line-height: 1.625;
   overflow-x: hidden;

@@ -10,6 +10,9 @@
         font-size: var(--size-500);
         word-break: break-all;
     }
+    .contact-form label {
+      font-weight: 400;
+    }
 }
 @media (min-width: 64rem) {
     .post-479 {
