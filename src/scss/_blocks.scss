@@ -97,25 +97,45 @@
 }
 
 /* Groups */
-.is-style-canvas {
-	margin-top: 0;
-	background-color: var(--color-light);
-}
-.is-style-wood {
-	position: relative;
+.is-style-green {
 	margin-top: 0;
 	background-color: var(--color-primary);
 	color: var(--color-white);
+  a {
+    color: var(--color-white);
+  }
 }
-.is-style-green {
+.is-style-gray {
+	margin-top: 0;
+	background-color: var(--color-gray);
+	color: var(--color-white);
+  a {
+    color: var(--color-white);
+  }
+}
+.is-style-yellow {
+	margin-top: 0;
+	background-color: var(--color-tertiary);
+	color: var(--color-white);
+  a {
+    color: var(--color-white);
+  }
+}
+.is-style-beige {
+	margin-top: 0;
+	background-color: var(--color-light);
+	color: var(--color-gray);
+  a {
+    color: var(--color-gray);
+  }
+}
+.is-style-purple {
 	margin-top: 0;
 	background-color: var(--color-secondary);
 	color: var(--color-white);
-}
-.is-style-brown {
-	margin-top: 0;
-	background-color: var(--color-primary);
-	color: var(--color-white);
+  a {
+    color: var(--color-white);
+  }
 }
 @media (min-width: 48rem) {
 	.is-style-canvas {
@@ -339,10 +359,10 @@
 #sb_instagram .sbi_follow_btn {
 	margin-top: 0;
 	a {
-		background: var(--color-primary);
+		background: var(--color-tertiary);
 		&:hover,
 		&:focus {
-			background-color: hsl(182.9deg, 41.1%, 41.4%);
+			background-color: hsl(41deg, 90%, 45%);
 		}
 	}
 }

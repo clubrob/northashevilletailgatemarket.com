@@ -5,10 +5,10 @@
 	border-radius: .25em;
 	box-shadow: none;
 	color: var(--color-white);
-	background-color: var(--color-primary);
+	background-color: var(--color-tertiary);
 	cursor: pointer;
 	display: inline-block;
-	font-size: 1rem;
+	font-size: var(--size-400);
 	margin: 0;
 	padding: .5rem 1rem;
 	text-align: center;
@@ -20,7 +20,7 @@
 	letter-spacing: .05em;
 	transition: background 200ms;
 	&:hover {
-		background-color: hsl(182.9deg, 41.1%, 41.4%);
+		background-color: hsl(41deg, 90%, 45%);
 		color: var(--color-white);
 	}
 }

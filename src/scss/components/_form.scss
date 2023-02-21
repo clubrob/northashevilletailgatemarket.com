@@ -6,9 +6,9 @@ textarea {
 	border: 0;
 	border-radius: .25em;
 	padding: .5rem;
-	background: var(--color-white);
-	color: var(--color-primary);
-	outline-color: var(--color-primary);
+	background: var(--color-light);
+	color: var(--color-gray);
+	outline-color: var(--color-gray);
 }
 input[type='text'],
 input[type='email'],
@@ -35,12 +35,12 @@ input[type='submit'],
 	input[type='email'],
 	input[type='tel'],
 	textarea {
-		background: var(--color-primary-300);
-		color: var(--color-white);
-		outline-color: var(--color-primary-400);
+		background: var(--color-light);
+		color: var(--color-gray);
+		outline-color: var(--color-light-gray);
 		margin: 0;
 		&::placeholder {
-			color: var(--color-white);
+			color: var(--color-gray);
 		}
 	}
 	.wp-block-jetpack-button {

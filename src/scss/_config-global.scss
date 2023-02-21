@@ -1,47 +1,59 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;900&display=swap');
 
 @font-face {
-    font-family: 'bodoni';
-    src: url('./assets/fonts/bodoniflf-regular.woff2') format('woff2');
+    font-family: 'caroni';
+    src: url('./assets/fonts/caroni-regular-webfont.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
-@font-face {
-    font-family: 'bodoni';
-    src: url('./assets/fonts/bodoniflf-bold-webfont.woff2') format('woff2');
-    font-weight: bold;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'bodoni';
-    src: url('./assets/fonts/bodoniflf-bolditalic-webfont.woff2') format('woff2');
-    font-weight: bold;
-    font-style: italic;
-}
-@font-face {
-    font-family: 'bodoni';
-    src: url('./assets/fonts/bodoniflf-italic-webfont.woff2') format('woff2');
-    font-weight: normal;
-    font-style: italic;
-}
+// @font-face {
+//     font-family: 'bodoni';
+//     src: url('./assets/fonts/bodoniflf-bold-webfont.woff2') format('woff2');
+//     font-weight: bold;
+//     font-style: normal;
+// }
+// @font-face {
+//     font-family: 'bodoni';
+//     src: url('./assets/fonts/bodoniflf-bolditalic-webfont.woff2') format('woff2');
+//     font-weight: bold;
+//     font-style: italic;
+// }
+// @font-face {
+//     font-family: 'bodoni';
+//     src: url('./assets/fonts/bodoniflf-italic-webfont.woff2') format('woff2');
+//     font-weight: normal;
+//     font-style: italic;
+// }
 
 :root {
 	/* Colors */
-	--color-primary: #4b3d2a;
-	--color-secondary: #80897a;
-	--color-tertiary: #609ca2;
-	--color-primary-300: #C0B6AC;
-	--color-primary-400: #8b847c;
-	--color-light: #fdfded;
-	--color-dark: #666;
-	--color-light-gray: #ddd;
-	--color-gray: #aaa;
+	// --color-primary: #4b3d2a;
+	// --color-secondary: #80897a;
+	// --color-tertiary: #609ca2;
+	// --color-primary-300: #C0B6AC;
+	// --color-primary-400: #8b847c;
+	// --color-light: #fdfded;
+	// --color-dark: #666;
+	// --color-light-gray: #ddd;
+	// --color-gray: #aaa;
+	// --color-white: #fff;
+	// --color-black: #000;
+	--color-primary: #55C7B5;
+	--color-secondary: #AD8AB5;
+	--color-tertiary: #f4b223;
+	--color-primary-300: #EAE0D2;
+	--color-primary-400: #5E6738;
+  --color-tertiary-500: #E5A261;
+	--color-light: #E7E4C9;
+	--color-dark: #5A6067;
+	--color-light-gray: #D9D9D6;
+	--color-gray: #7D9C91;
 	--color-white: #fff;
 	--color-black: #000;
 	/* Typography */
-	--font-body: 'Lato', Verdana, sans-serif;
-	--font-heading: 'Lato', Verdana, sans-serif;
-	--font-heading-alt: 'bodoni', Times, 'Times New Roman', serif;
+	--font-body: 'Rubik', Verdana, sans-serif;
+	--font-heading: 'caroni', Times, 'Times New Roman', serif;
+	--font-heading-alt: 'caroni', Times, 'Times New Roman', serif;
 	/* Sizes */
 	--size-300: 0.75rem;
 	--size-400: 1rem;

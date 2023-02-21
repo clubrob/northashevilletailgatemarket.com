@@ -6,20 +6,24 @@ wp.domReady( () => {
 			isDefault: true,
 		},
 		{
-			name: 'canvas',
-			label: 'Canvas Background',
-		},
-		{
-			name: 'wood',
-			label: 'Wood Grain Background',
+			name: 'beige',
+			label: 'Beige Background',
 		},
 		{
 			name: 'green',
 			label: 'Green Background',
 		},
 		{
-			name: 'brown',
-			label: 'Brown Background',
+			name: 'gray',
+			label: 'Gray Background',
+		},
+		{
+			name: 'yellow',
+			label: 'Yellow Background',
+		},
+		{
+			name: 'purple',
+			label: 'Purple Background',
 		}
 	]);
 	wp.blocks.registerBlockStyle( 'core/heading', [

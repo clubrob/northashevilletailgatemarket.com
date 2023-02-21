@@ -45,7 +45,7 @@ body.no-sidebar {
 
 
 .site-footer {
-	background-color: var(--color-secondary);
+	background-color: var(--color-gray);
 	margin-top: var(--size-700);
 	* {
 		color: var(--color-white);
@@ -137,7 +137,7 @@ body.no-sidebar {
 .footer-back-top {
 	display: flex;
 	justify-content: center;
-	background: var(--color-primary);
+	background: var(--color-tertiary);
 	.back-top-button {
 		display: flex;
 		align-items: center;

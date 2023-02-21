@@ -1,5 +1,4 @@
 /* Box sizing rules */
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap");
 *,
 *::before,
 *::after {
@@ -73,46 +72,29 @@ select {
   }
 }
 @font-face {
-  font-family: "bodoni";
-  src: url("./assets/fonts/bodoniflf-regular.woff2") format("woff2");
+  font-family: "caroni";
+  src: url("./assets/fonts/caroni-regular-webfont.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
-}
-@font-face {
-  font-family: "bodoni";
-  src: url("./assets/fonts/bodoniflf-bold-webfont.woff2") format("woff2");
-  font-weight: bold;
-  font-style: normal;
-}
-@font-face {
-  font-family: "bodoni";
-  src: url("./assets/fonts/bodoniflf-bolditalic-webfont.woff2") format("woff2");
-  font-weight: bold;
-  font-style: italic;
-}
-@font-face {
-  font-family: "bodoni";
-  src: url("./assets/fonts/bodoniflf-italic-webfont.woff2") format("woff2");
-  font-weight: normal;
-  font-style: italic;
 }
 :root {
   /* Colors */
-  --color-primary: #4b3d2a;
-  --color-secondary: #80897a;
-  --color-tertiary: #609ca2;
-  --color-primary-300: #C0B6AC;
-  --color-primary-400: #8b847c;
-  --color-light: #fdfded;
-  --color-dark: #666;
-  --color-light-gray: #ddd;
-  --color-gray: #aaa;
+  --color-primary: #55C7B5;
+  --color-secondary: #AD8AB5;
+  --color-tertiary: #f4b223;
+  --color-primary-300: #EAE0D2;
+  --color-primary-400: #5E6738;
+  --color-tertiary-500: #E5A261;
+  --color-light: #E7E4C9;
+  --color-dark: #5A6067;
+  --color-light-gray: #D9D9D6;
+  --color-gray: #7D9C91;
   --color-white: #fff;
   --color-black: #000;
   /* Typography */
-  --font-body: "Lato", Verdana, sans-serif;
-  --font-heading: "Lato", Verdana, sans-serif;
-  --font-heading-alt: "bodoni", Times, "Times New Roman", serif;
+  --font-body: "Rubik", Verdana, sans-serif;
+  --font-heading: "caroni", Times, "Times New Roman", serif;
+  --font-heading-alt: "caroni", Times, "Times New Roman", serif;
   /* Sizes */
   --size-300: 0.75rem;
   --size-400: 1rem;
@@ -404,27 +386,48 @@ select {
 }
 
 /* Groups */
-.is-style-canvas {
-  margin-top: 0;
-  background-color: var(--color-light);
-}
-
-.is-style-wood {
-  position: relative;
+.is-style-green {
   margin-top: 0;
   background-color: var(--color-primary);
   color: var(--color-white);
 }
+.is-style-green a {
+  color: var(--color-white);
+}
 
-.is-style-green {
+.is-style-gray {
+  margin-top: 0;
+  background-color: var(--color-gray);
+  color: var(--color-white);
+}
+.is-style-gray a {
+  color: var(--color-white);
+}
+
+.is-style-yellow {
+  margin-top: 0;
+  background-color: var(--color-tertiary);
+  color: var(--color-white);
+}
+.is-style-yellow a {
+  color: var(--color-white);
+}
+
+.is-style-beige {
+  margin-top: 0;
+  background-color: var(--color-light);
+  color: var(--color-gray);
+}
+.is-style-beige a {
+  color: var(--color-gray);
+}
+
+.is-style-purple {
   margin-top: 0;
   background-color: var(--color-secondary);
   color: var(--color-white);
 }
-
-.is-style-brown {
-  margin-top: 0;
-  background-color: var(--color-primary);
+.is-style-purple a {
   color: var(--color-white);
 }
 
@@ -636,10 +639,10 @@ select {
   margin-top: 0;
 }
 #sb_instagram .sbi_follow_btn a {
-  background: var(--color-primary);
+  background: var(--color-tertiary);
 }
 #sb_instagram .sbi_follow_btn a:hover, #sb_instagram .sbi_follow_btn a:focus {
-  background-color: hsl(182.9deg, 41.1%, 41.4%);
+  background-color: hsl(41deg, 90%, 45%);
 }
 
 #sb_instagram .sbi_follow_btn a:focus,
@@ -695,7 +698,7 @@ body.no-sidebar {
 }
 
 .site-footer {
-  background-color: var(--color-secondary);
+  background-color: var(--color-gray);
   margin-top: var(--size-700);
 }
 .site-footer * {
@@ -782,7 +785,7 @@ body.no-sidebar {
 .footer-back-top {
   display: flex;
   justify-content: center;
-  background: var(--color-primary);
+  background: var(--color-tertiary);
 }
 .footer-back-top .back-top-button {
   display: flex;
@@ -892,10 +895,10 @@ body.no-sidebar {
   border-radius: 0.25em;
   box-shadow: none;
   color: var(--color-white);
-  background-color: var(--color-primary);
+  background-color: var(--color-tertiary);
   cursor: pointer;
   display: inline-block;
-  font-size: 1rem;
+  font-size: var(--size-400);
   margin: 0;
   padding: 0.5rem 1rem;
   text-align: center;
@@ -910,7 +913,7 @@ body.no-sidebar {
 .wp-block-button__link:hover,
 .button:hover,
 .contact-form-block input[type=submit]:hover {
-  background-color: hsl(182.9deg, 41.1%, 41.4%);
+  background-color: hsl(41deg, 90%, 45%);
   color: var(--color-white);
 }
 
@@ -940,7 +943,7 @@ body.nav-open {
   width: 100%;
   height: 4rem;
   line-height: 1.2;
-  background: var(--color-tertiary);
+  background: var(--color-primary);
   color: var(--color-white);
   padding: 0 var(--flow-space);
 }
@@ -965,7 +968,7 @@ body.nav-open {
   justify-content: space-between;
   align-items: center;
   height: 5rem;
-  background-color: var(--color-primary);
+  background-color: var(--color-light);
   padding-left: var(--flow-space);
   padding-right: var(--flow-space);
 }
@@ -1047,6 +1050,7 @@ body.nav-open {
   display: block;
   width: 100%;
   background: var(--color-primary-300);
+  font-family: var(--font-heading);
   font-size: var(--size-500);
   color: var(--color-primary);
   text-align: center;
@@ -1128,15 +1132,15 @@ body.nav-open {
   .nav-wrapper {
     padding-left: 0;
     padding-right: 0;
-    background-color: var(--color-primary);
+    background-color: var(--color-light);
   }
   .has-cover .nav-wrapper {
     transition: background 500ms;
-    background-color: rgba(75, 61, 42, 0.3);
+    background-color: rgba(231, 228, 201, 0.2);
   }
   .has-cover.scrolled .nav-wrapper {
     transition: background 500ms;
-    background-color: var(--color-primary);
+    background-color: var(--color-light);
   }
   .menu-toggle {
     display: none;
@@ -1175,8 +1179,7 @@ body.nav-open {
     align-items: center;
     justify-content: center;
     background: transparent;
-    font-family: var(--font-heading);
-    font-size: 0.9rem;
+    font-size: var(--size-500);
     font-weight: 500;
     border-radius: 0;
     border: 0;
@@ -1229,7 +1232,7 @@ body.nav-open {
   .menu-main-menu-container .nav-menu[aria-expanded=true] .menu-item:nth-child(9) a {
     padding: 0.5rem 1rem;
     background: var(--color-primary);
-    font-size: 10px;
+    font-size: var(--size-400);
     line-height: 1.2;
     letter-spacing: 0.1em;
   }
@@ -1246,6 +1249,10 @@ body.nav-open {
     transition: max-height 500ms;
     max-height: 3.5rem;
   }
+  .scrolled .menu-main-menu-container .nav-menu[aria-expanded=false] .menu-item a,
+  .scrolled .menu-main-menu-container .nav-menu[aria-expanded=true] .menu-item a {
+    color: var(--color-gray);
+  }
   .scrolled .menu-main-menu-container .nav-menu[aria-expanded=false] #menu-item-988 ._svg,
   .scrolled .menu-main-menu-container .nav-menu[aria-expanded=true] #menu-item-988 ._svg {
     transition: max-width 500ms;
@@ -1254,6 +1261,10 @@ body.nav-open {
   .scrolled .menu-main-menu-container .nav-menu[aria-expanded=false] .menu-item:nth-child(9),
   .scrolled .menu-main-menu-container .nav-menu[aria-expanded=true] .menu-item:nth-child(9) {
     height: 3rem;
+  }
+  .scrolled .menu-main-menu-container .nav-menu[aria-expanded=false] .menu-item:nth-child(9) a,
+  .scrolled .menu-main-menu-container .nav-menu[aria-expanded=true] .menu-item:nth-child(9) a {
+    color: var(--color-white);
   }
   .nav-social {
     display: none;
@@ -1314,9 +1325,9 @@ textarea {
   border: 0;
   border-radius: 0.25em;
   padding: 0.5rem;
-  background: var(--color-white);
-  color: var(--color-primary);
-  outline-color: var(--color-primary);
+  background: var(--color-light);
+  color: var(--color-gray);
+  outline-color: var(--color-gray);
 }
 
 input[type=text],
@@ -1346,9 +1357,9 @@ input[type=submit],
 #mc-embedded-subscribe-form input[type=email],
 #mc-embedded-subscribe-form input[type=tel],
 #mc-embedded-subscribe-form textarea {
-  background: var(--color-primary-300);
-  color: var(--color-white);
-  outline-color: var(--color-primary-400);
+  background: var(--color-light);
+  color: var(--color-gray);
+  outline-color: var(--color-light-gray);
   margin: 0;
 }
 .contact-form input[type=text]::placeholder,
@@ -1359,7 +1370,7 @@ input[type=submit],
 #mc-embedded-subscribe-form input[type=email]::placeholder,
 #mc-embedded-subscribe-form input[type=tel]::placeholder,
 #mc-embedded-subscribe-form textarea::placeholder {
-  color: var(--color-white);
+  color: var(--color-gray);
 }
 .contact-form .wp-block-jetpack-button,
 #mc-embedded-subscribe-form .wp-block-jetpack-button {
@@ -1423,7 +1434,7 @@ input[type=submit],
   position: fixed;
   bottom: 0;
   left: 0;
-  background-color: rgba(75, 61, 42, 0.9);
+  background-color: rgba(85, 199, 181, 0.9);
   z-index: 998;
   transform: translateY(100%);
   transition: transform 400ms, opacity 400ms;
